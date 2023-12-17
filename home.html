@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- Render all element in normal mode File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="home.css">
+    <!-- favicon link -->
+    <link rel="icon" href="image/favicon.ico">
+    
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+    <a href="index.html" class="logo"> <i class="fa-solid fa-face-grin-stars"></i>GlowGenix </a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <!-- <div id="cart-btn" class="fas fa-shopping-cart"></div> -->
+        <div id="login-btn"  class="fas fa-user"></div>
+
+    </div>
+</header>
+
+<!-- header section ends  -->
+<!-- closer btn  -->
+<div id="closer" class="fas fa-times"></div>
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="home.html">home</a>
+    <a href="#about">about</a>
+    <a href="customer-dashboard.html">shop</a>
+    <a href="team.html">team</a>
+    <a href="contact.html">contact</a>
+    <a href="feedback.html">feedback</a>
+</nav>
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+    <div class="shopping-cart">
+        <div class="sum-prices">
+            <!--Shopping cart logo-->
+            <i
+                class="fas fa-shopping-cart shoppingCartButton"
+            ></i>
+            <!--The total prices of products in the shopping cart -->
+            <h6 id="sum-prices"></h6>
+        </div>
+    </div>
+    <div class="producstOnCart hide">
+        <div class="overlay"></div>
+        <div class="top">
+            <button id="closeButton">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h3>Cart</h3>
+        </div>
+        <ul id="buyItems">
+            <h4 class="empty">Your shopping cart is empty</h4>
+        </ul>
+        <button class="btn checkout hidden">Check out</button>
+    </div>
+</nav>
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <div class="actions">
+        <button class="login" onclick="login()" style="color: aliceblue; background-color: #546557; border-radius: 30px; text-transform: capitalize;font-weight: bold;font-size: 25px;width: 200px;cursor: pointer;">log in</button>
+        <br><br>
+        <button class="signup" onclick="signup()" style="color: aliceblue; background-color: #546557; border-radius: 30px; text-transform: capitalize;font-weight: bold;font-size: 25px;width: 200px;cursor: pointer;">sign up</button>   
+        <br><br>
+        <button class="logout" onclick="logout()" style="margin-left: 50px; width: 100px;background-color: red;color: white; justify-content: center;align-items: center;border: none;font-size: 15px;outline: none;border-radius: 30px;margin-top: 20px;cursor: pointer;">Log Out</button>
+    </div>
+
+</div>
+
+<!-- home hero section starts  -->
+
+<section class="home">
+    <div class="slides-container">
+        <div class="slide active">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3 >Unlock Your Natural Radiance Discover Our Skin-Nourishing Solutions!</h3>
+                <p>Indulge in our transformative skincare line for a luminous, radiant complexion that accentuates your natural beauty.</p>
+                <a href="customer-dashboard.html" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/hero.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3 >Unlock Your Natural Radiance Discover Our Skin-Nourishing Solutions!</h3>
+                <p>Indulge in our transformative skincare line for a luminous, radiant complexion that accentuates your natural beauty.</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/skin-care-product-9774568-7974586.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+</section>
+
+<!-- home hero section ends -->
+
+<!-- about us section start -->
+
+<section class="about" id="about">
+    <div class="image">
+        <!-- <img src="image/about.webp" alt=""> -->
+        <img src="image/skin.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>About GlowGenix</span>
+        <h3>Discover Our Story: Crafting Natural Beauty, Empowering Radiant Skin</h3>
+        <p> we believe in harnessing nature's essence to curate skincare solutions that celebrate your skin's inherent beauty. With a commitment to quality, our range blends natural ingredients and scientific innovation, delivering products that nurture, protect, and enhance your skin. Our mission is to empower you on your skincare journey, promoting confidence and radiance through formulations crafted with care and expertise.</p>
+        <!-- <a href="#" class="btn">read more</a> -->
+    </div>
+
+</section>
+<!-- about us section end -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+    <div class="banner">
+        <img src="photo/bc3.webp" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="photo/bm2.jpg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="photo/bm1.jpeg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="photo/eye1.jpg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="photo/bc5.png" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="photo/most4.jpeg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="customer-dashboard.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- footer section  start-->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="team.html"> <i class="fas fa-arrow-right"></i> team</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms of user</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+        <div class="image-logo">
+            <img src="image/logo.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+<!-- footer section end -->
+
+<section class="credit">
+    created by <span>GlowGenix</span> | all rights reserved!
+</section>
+
+<!--- #BACK TO TOP-->
+
+<a href="#top" id="backToTopBtn" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="signinfinal.js"></script>
+
+
+
+
+<!-- <script>
+    function redirectToSignIn() {
+        // Redirect to the signin.html page
+        window.location.href = 'signin.html?formPart=specificFormPart';
+}
+</script> -->
+
+</body>
+</html>
